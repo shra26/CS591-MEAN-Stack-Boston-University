@@ -13,7 +13,7 @@ function* fibs () {
    myFibs = fibs() 
    while(true){
      let z = myFibs.next()
-     if(z.value == 0 || z.value%2 === 0 ){
+     if(z.value === 0 || z.value%2 === 0 ){
        yield z.value
      }
    }
