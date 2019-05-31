@@ -1,0 +1,9 @@
+
+extends layout
+
+block content
+    if text   
+        h1 This is the text that was passed in the request body ---- #{text}
+        h1 This is the length of the text ---- #{length}
+    else
+        h1 This is the passed JSON ---- #{source}
