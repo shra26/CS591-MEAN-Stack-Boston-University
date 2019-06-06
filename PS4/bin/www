@@ -5,7 +5,7 @@
  */
 
 let app = require('../app');
-let debug = require('debug')('cs591-mean-stack-boston-university:server');
+let debug = require('debug')('ps4:server');
 let http = require('http');
 
 /**

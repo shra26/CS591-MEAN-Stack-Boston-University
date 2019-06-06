@@ -6,7 +6,8 @@ let logger = require('morgan');
 
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
-let ps3Router = require('./routes/ps3')
+let ps4Router = require('./routes/ps4') 
+
 let app = express();
 
 // view engine setup
@@ -21,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/ps3', ps3Router);
+app.use('/ps4', ps4Router)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

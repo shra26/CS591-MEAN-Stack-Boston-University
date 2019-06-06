@@ -1,5 +1,5 @@
 {
-  "name": "cs591-mean-stack-boston-university",
+  "name": "ps4",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -11,6 +11,8 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
-    "pug": "2.0.0-beta11"
+    "pug": "2.0.0-beta11",
+    "request": "^2.88.0",
+    "request-promise-lite": "^0.15.0"
   }
 }
