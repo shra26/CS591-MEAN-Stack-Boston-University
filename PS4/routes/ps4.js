@@ -12,7 +12,7 @@ const resolver = new Promise((resolve, reject) => {
 });
 router.get('/', (req, res, next) => {
 	resolver.then(value => {
-		res.render('ps4', { weather: value.results.sunrise });
+		res.send({ weather: value.results, req: req.headers.data});
 	});
 });
 
